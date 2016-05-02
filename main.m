@@ -46,6 +46,8 @@ static void loadXcodeFrameworks() {
   NSArray<NSString *> *frameworks = @[
     @"DVTFoundation.framework",
     @"DVTSourceControl.framework",
+    @"DVTServices.framework",
+    @"DVTPortal.framework",
     @"IBFoundation.framework",
     @"IBAutolayoutFoundation.framework",
     @"IDEFoundation.framework",
