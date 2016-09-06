@@ -108,6 +108,10 @@ int main(int argc, const char *argv[]) {
   @autoreleasepool {
     assert(argc > 1 && "missing argument for project path");
     NSString *path = [NSString stringWithUTF8String:argv[1]];
+    if (![path hasPrefix:@"/"]) {
+      path = [[NSFileManager defaultManager].currentDirectoryPath stringByAppendingPathComponent:path];
+    }
+
     loadXcodeFrameworks();
     initializeXcodeFrameworks();
     Class PBXProject = NSClassFromString(@"PBXProject");
