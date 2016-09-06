@@ -48,8 +48,11 @@ static void loadXcodeFrameworks() {
     @"DVTSourceControl.framework",
     @"DVTServices.framework",
     @"DVTPortal.framework",
+    @"DVTAnalyticsClient.framework",
+    @"DVTAnalytics.framework",
     @"IBFoundation.framework",
     @"IBAutolayoutFoundation.framework",
+    @"SourceKit.framework",
     @"IDEFoundation.framework",
     @"Xcode3Core.ideplugin",
   ];
